@@ -38,7 +38,5 @@ function Cal (calc) {
             alert("please only enter numbers");
     }
 
-
-
 }
 
