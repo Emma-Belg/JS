@@ -6,29 +6,57 @@
  * started at 26/10/2018
  */
 
+// As there is no ReadMe here my note to self is here:
+// I had a problem with recieving NAN, I have therefore used => console.log(num1) < to check what the console saw.
+// My proplem was that my listener was below the the getElementById, therefore it was recievig  the blank NaN, not the entered numbers
+
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
+
     document.getElementById("addition").addEventListener("click", function() {
-        let addition = $("#op-one") + $("#op-two");
-        document.write(addition);
+
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        //ParseInt turns a string into a value
+        let num3 = parseInt(num1);
+        let num4 = parseInt(num2);
+
+        let addition = (num3 + num4);
+        alert(addition);
+
     });
 
     document.getElementById("substraction").addEventListener("click", function() {
-        let substraction = 10 - 5;
-        document.write(substraction);
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        let num3 = parseInt(num1);
+        let num4 = parseInt(num2);
+
+        let substraction = (num3 - num4);
+        alert(substraction);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
-        let multiplication = 10 * 5;
-        document.write(multiplication);
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        let num3 = parseInt(num1);
+        let num4 = parseInt(num2);
+
+        let multiplication = (num3 * num4);
+        alert(multiplication);
     });
 
     document.getElementById("division").addEventListener("click", function() {
-        let division = 10 / 5;
-        document.write(division);
+        let num1 = document.getElementById("op-one").value;
+        let num2 = document.getElementById("op-two").value;
+        let num3 = parseInt(num1);
+        let num4 = parseInt(num2);
+
+        let division = (num3 / num4);
+        alert(division);
     });
 })();
