@@ -9,8 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+function colours(col) {
 
-    // your code here
 
-})();
+    switch (col) {
+            case "red":
+            document.body.style.backgroundColor = "red";
+
+            break;
+            case "green":
+                document.body.style.backgroundColor = "green";
+
+            break;
+            case "yellow":
+                document.body.style.backgroundColor = "yellow";
+
+            break;
+            case "blue":
+                document.body.style.backgroundColor = "blue";
+            break;
+            default:
+                document.body.style.backgroundColor = "grey";
+            }
+
+}
+
