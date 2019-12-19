@@ -11,7 +11,19 @@
 
 (function() {
 
-    let d = new Date();
-    document.getElementById("target").innerHTML = d;
+    const d = new Date();
+    const year = d.getFullYear();
+    const date = d.getDate();
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "October", "November", "December"];
+    const monthIndex = d.getMonth();
+    const monthName = months[monthIndex];
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const dayIndex = d.getDay();
+    const dayName = days[dayIndex];
+    const hour = d.getHours();
+    const minutes = d.getMinutes();
+
+
+    document.getElementById("target").innerHTML = (dayName) + " "+ (date) + " "+ (monthName)+ " "+ (year) + " "+ (hour) + "h" + (minutes);
 
 })();
