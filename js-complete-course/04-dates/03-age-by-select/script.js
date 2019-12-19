@@ -30,7 +30,6 @@
         {
             age--;
         }
-        return age;
         alert(age);
     });
 
