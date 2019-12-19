@@ -10,19 +10,29 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function () {
+        let d = document.getElementById("dob-day").value;
+        let m = document.getElementById("dob-month").value;
+        let y = document.getElementById("dob-year").value;
 
-    let d = document.getElementById("dob-day").addEventListener("dob-day").value;
-    let m = document.getElementById("dob-month").addEventListener("dob-month").value;
-    let y = document.getElementById("dob-year").addEventListener("dob-year").value;
+        let now = new Date();
+        let toyear = now.getFullYear();
+        let tomon = now.getMonth();
+        let today = now.getDate();
 
-    document.getElementById("run").addEventListener("click", function   () {
-        alert(d + " ," + m + " ," + y)
-    })
+        let age = toyear - y;
+        if (tomon < (m - 1))
+        {
+            age--;
+        }
 
-    var info = document.getElementById("dob-day");
-    function bday(){
-        info.textContent = this.value;
-    }
-    document.getElementById("dob-day").onchange = bday;
+        if (((m - 1) == tomon) && ( today < d))
+        {
+            age--;
+        }
+        return age;
+        alert(age);
+    });
 
 })();
+
