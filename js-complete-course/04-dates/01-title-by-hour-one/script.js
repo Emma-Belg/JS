@@ -21,16 +21,19 @@
         return i;
     }
 
-        var p = printDate();
+        let p = printDate();
+        console.log = p;
 
     function printDate() {
         let d = new Date();
         let h = addZero(d.getHours());
         if (h < 18) {
             document.getElementById("target").innerHTML = "hello!";
+            document.write = h;
         }
-        else (h >= 18);{
+        else (h >= 18); {
             document.getElementById("target").innerHTML = "Good Evening";
+            document.write = h;
         }
     }
 
