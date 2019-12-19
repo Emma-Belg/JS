@@ -15,17 +15,13 @@
 
 
     let p = printDate();
-    console.log = p;
 
     function printDate() {
         let d = new Date();
         let h = d.getUTCHours();
         let m = d.getUTCMinutes();
-        if (h >= 17 && minutes >= 30){
+        if (h >= 17 && m >= 30){
             document.getElementById("target").innerHTML = "good evening"
-        }
-        else if (h >= 18) {
-            document.getElementById("target").innerHTML = "good evening!";
         }
         else {
             document.getElementById("target").innerHTML = "hello";
