@@ -34,3 +34,29 @@ To get the most out of these exercises, some useful resources:
 Good work!
 
 ![](https://media.giphy.com/media/xT9DPPqwOCoxi3ASWc/giphy.gif)
+
+
+
+***
+## Notes to self
+
+* document.getElementById("......").addEventListener("click", function() 
+
+### 01 Base
+
+### 02 Math 
+
+*Factorial*
+I could have also used the below function (the ? is a form of mini if else - more research needed.)
+function factorial(n) {
+    return (n != 1) ? n * factorial(n - 1) : 1;
+}
+
+
+
+### 03 Colours
+
+### 04 Dates
+
+### 05 Arrays
+
