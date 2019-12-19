@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function(year) {
+
+        let count = 0;
+        for (let month=0; month<12; month++) {
+            let d = new Date();
+            if(d.getDay() == 5){
+                count++;
+            }
+            let x = document.getElementById("year").value;
+            alert(x);
+        }
+
+
+    });
 
 })();
