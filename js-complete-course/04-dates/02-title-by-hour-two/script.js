@@ -21,25 +21,16 @@
         let d = new Date();
         let h = d.getUTCHours();
         let m = d.getUTCMinutes();
-        if (h < 17 && m < 30) {
-            document.getElementById("target").innerHTML = "hello!";
-            document.write = h+m;
+        if (h >= 17 && minutes >= 30){
+            document.getElementById("target").innerHTML = "good evening"
         }
-        else (h > 17 && m > 0); {
-            document.getElementById("target").innerHTML = "Good Evening";
-            document.write = h+m;
+        else if (h >= 18) {
+            document.getElementById("target").innerHTML = "good evening!";
+        }
+        else {
+            document.getElementById("target").innerHTML = "hello";
         }
     }
 
 
 })();
-function test() {
-    if (h > 17 && m > 0); {
-        document.getElementById("target").innerHTML = "good evening";
-    }
-else
-    (h < 17 && m > 30);
-    {
-        document.getElementById("target").innerHTML = "hello!";
-    }
-}
