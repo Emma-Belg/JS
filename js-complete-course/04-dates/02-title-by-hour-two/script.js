@@ -13,20 +13,14 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    function addZero(i) {
-        if (i < 10) {
-            i = "0" + i;
-        }
-        return i;
-    }
 
     let p = printDate();
     console.log = p;
 
     function printDate() {
         let d = new Date();
-        let h = addZero(d.getUTCHours());
-        let m = addZero(d.getUTCMinutes());
+        let h = d.getUTCHours();
+        let m = d.getUTCMinutes();
         if (h < 17 && m < 30) {
             document.getElementById("target").innerHTML = "hello!";
             document.write = h+m;
@@ -39,3 +33,13 @@
 
 
 })();
+function test() {
+    if (h > 17 && m > 0); {
+        document.getElementById("target").innerHTML = "good evening";
+    }
+else
+    (h < 17 && m > 30);
+    {
+        document.getElementById("target").innerHTML = "hello!";
+    }
+}
