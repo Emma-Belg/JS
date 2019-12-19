@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    let d = document.getElementById("dob-day").addEventListener("change").value;
+    let m = document.getElementById("dob-month").addEventListener("change").value;
+    let y = document.getElementById("dob-year").addEventListener("change").value;
+
+    document.getElementById("run").addEventListener("click", function   () {
+        alert(d + " ," + m + " ," + y)
+    })
 
 })();
