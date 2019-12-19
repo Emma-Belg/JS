@@ -12,7 +12,7 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-    document.getElementById("target").innerHTML = p; {
+
 
     function addZero(i) {
         if (i < 10) {
@@ -27,24 +27,13 @@
         let d = new Date();
         let h = addZero(d.getHours());
         if (h < 18) {
-            let x = document.getElementById("target");
-            x.innerHTML = "Hello!";
+            document.getElementById("target").innerHTML = "hello!";
         }
         else (h >= 18);{
-            let y = document.getElementById("target");
-            y.innerHTML = "Good evening";
+            document.getElementById("target").innerHTML = "Good Evening";
         }
     }
 
-            }
 
-    var output = document.getElementById("result");
-    function solve() {
-        var input = document.getElementById("NumToBMultiplied").value;
-        output.innerHTML = "";
-        for(i=0; i < 100; i++) {
-            output.innerHTML += i * input + "<br/>";
-        }
-    }
 
 })();
