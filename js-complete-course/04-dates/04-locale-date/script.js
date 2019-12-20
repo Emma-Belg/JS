@@ -14,7 +14,7 @@
     const d = new Date();
     const year = d.getFullYear();
     const date = d.getDate();
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "October", "November", "December"];
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const monthIndex = d.getMonth();
     const monthName = months[monthIndex];
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -23,6 +23,7 @@
     const hour = d.getHours();
     const minutes = d.getMinutes();
 
+    console.log(months);
 
     document.getElementById("target").innerHTML = (dayName) + " "+ (date) + " "+ (monthName)+ " "+ (year) + " "+ (hour) + "h" + (minutes);
 
