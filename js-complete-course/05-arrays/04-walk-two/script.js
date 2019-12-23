@@ -26,6 +26,9 @@
         "cerise",
     ];
 
-    // your code here
+    fruits.forEach(function(entry) {
+        console.log(entry);
+        alert(entry);
+    });
 
 })();
