@@ -11,21 +11,28 @@
 
 (function() {
 
-    var fruits = [
-        "apple",
-        "perry",
-        "strawberry",
-        "tomato",
-        "kiwi",
-        "banana",
-        "orange",
-        "mandarin",
-        "durian",
-        "peach",
-        "grapes",
-        "cherry",
-    ];
+    document.getElementById('run').addEventListener('click', function () {
+        var fruits = [
+            "apple",
+            "perry",
+            "strawberry",
+            "tomato",
+            "kiwi",
+            "banana",
+            "orange",
+            "mandarin",
+            "durian",
+            "peach",
+            "grapes",
+            "cherry",
+        ];
 
-    // your code here
+        fruits.forEach(function () {
+            if (fruits.includes('apple')) ;
+            {
+                console.log("yes");
+            }
+        });
 
+    });
 })();
