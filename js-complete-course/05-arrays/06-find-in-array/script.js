@@ -89,6 +89,12 @@
         },
     ];
 
-    // your code here
+    people.forEach(function(ppl) {
+        if (ppl.firstname == "Jean" && ppl.lastname == "Dupont") {
+            console.log(ppl.email);
+            alert(ppl.email);
+        }
+    });
+
 
 })();

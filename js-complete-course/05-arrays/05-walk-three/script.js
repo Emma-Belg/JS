@@ -39,6 +39,9 @@
         },
     ];
 
-    // your code here
+    people.forEach(function(ppl) {
+        console.log(ppl.firstname + ppl.lastname);
+        alert(ppl.firstname + " " + ppl.lastname);
+    });
 
 })();
