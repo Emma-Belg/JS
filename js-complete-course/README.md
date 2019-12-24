@@ -60,3 +60,12 @@ function factorial(n) {
 
 ### 05 Arrays
 
+confused by 5.10, I'm trying to just pull out the ages from the array but having trouble. I found this 
+https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array
+but I don't understand .map. I need to research more.
+    let ageOb = people.map(({ age }) => age);
+    return ageOb;
+
+    console.log(ageOb);
+
+
