@@ -89,6 +89,45 @@
         },
     ];
 
-    // your code here
+    document.getElementById('run').addEventListener('click', function () {
+
+        let justAge = [];
+        for (i=0;  i < people.length; i++) {
+            justAge [i] = people[i].age;
+        }
+        console.log(justAge);
+
+        totalAge = justAge.reduce(myFunc);
+
+        function myFunc(accumulator, num) {
+            return accumulator + num;
+        }
+        alert(totalAge);
+
+    });
 
 })();
+
+/*
+people.age = people.reduce(myFunc);
+
+function myFunc(total, num) {
+    return total + num;
+}
+
+let result = people.age.reduce(myFunc);
+console.log(result);
+
+
+
+function getSum(total, num) {
+    return total + Math.round(num);
+}
+
+function myFunction(item) {
+    people.age = people.reduce(getSum, 0);
+}
+
+alert(myFunction(people.age));
+
+ */
