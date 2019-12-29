@@ -69,7 +69,33 @@ but I don't understand .map. I need to research more.
     console.log(ageOb);
 
 
+
+
 ### 06 DOM
+
+About DOM: "When a web page is loaded, the browser creates a Document Object Model of the page. The HTML DOM model is constructed as a tree of Objects.
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+* The HTML elements as objects
+* The properties of all HTML elements
+* The methods to access all HTML elements
+* The events for all HTML elements
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements." https://www.w3schools.com/js/js_htmldom.asp
+"**The DOM Programming Interface**
+The HTML DOM can be accessed with JavaScript (and with other programming languages).In the DOM, all HTML elements are defined as objects.The programming interface is the properties and methods of each object.
+A **property** is a value that you can get or set (like changing the content of an HTML element).
+A **method** is an action you can do (like add or deleting an HTML element).
+eg: document.getElementById("demo").innerHTML = "Hello World!";
+In the example above, getElementById is a **method**, while innerHTML is a **property**."
+"The HTML DOM document object is the owner of all other objects in your web page. The document object represents your web page. If you want to access any element in an HTML page, you always start with accessing the document object." hence why we write *document*.getElement .... because we need to access it in the *document* first.
+
+| Property      | Description |
+| ----------- | ----------- |
+| element.innerHTML =  new html content    | Change the inner HTML of an element     |
+| element.attribute = new value  | Change the attribute value of an HTML element      |
+| element.style.property = new style  |  Change the style of an HTML element   |
+| **Method**  |  **Description**   |
+| element.setAttribute(attribute, value)  |  Change the attribute value of an HTML element |
+
 
 Accesing elements using css selectors: https://dev.to/neutrino2211/using-css-selectors-in-javascript-3hlm 
 Useful information on replacing html elements using js: https://stackoverflow.com/questions/2487290/how-to-overwrite-html-element-from-javascript
@@ -77,5 +103,5 @@ Useful information on replacing html elements using js: https://stackoverflow.co
 
 There are a number of wrinkles around using innerHTML in certain browsers, mostly around tables and forms. If you can possibly use a library like jQuery, Prototype, etc., I'd do so, as they've got workarounds for those issues built-in.
 
-Alternatively, you can use the various [other DOM methods](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1950641247) rather than innerHTML (the same ones I used for creating the div and adding/removing, above). Note that in most browsers, doing any significant amount of markup by doing a bunch of createElement, appendChild, etc., calls rather than using innerHTML will be dramatically slower. Parsing HTML into their internal structures and displaying it is fundamentally what browsers do, and so they're highly optimized to do that. When you go through the DOM interface, you're going through a layer built on top of their internal structures and not getting the advantage of their optimizations. Sometimes you have to do it that way, but mostly, innerHTML is your friend."
+Alternatively, you can use the various [other DOM methods](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1950641247) rather than innerHTML (the same ones I used for creating the div and adding/removing, above). Note that in most browsers, doing any significant amount of markup by doing a bunch of createElement, appendChild, etc., calls rather than using innerHTML will be dramatically slower. Parsing HTML into their internal structures and displaying it is fundamentally what browsers do, and so they're highly optimized to do that. When you go through the DOM interface, you're going through a layer built on top of their internal structures and not getting the advantage of their optimizations. Sometimes you have to do it that way, but mostly, innerHTML is your friend." .. "I strongly encourage you to 'actually replace the element itself'. Using innerHTML is convenient sometimes, but can also be a vulnerability other times. So if this is your first DOM-adventure, I encourage you to do it the long way at least this once."
 
