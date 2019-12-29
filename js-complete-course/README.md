@@ -42,6 +42,8 @@ Good work!
 
 * document.getElementById("......").addEventListener("click", function() 
 * https://stackoverflow.com/questions/29269948/trigger-event-when-selecting-in-a-dropdown-javascript-eventlistener
+* the ? used as a mini if else statement https://javascript.info/ifelse
+* 'this' js keyword https://www.w3schools.com/js/js_this.asp
 
 ### 01 Base
 
@@ -53,13 +55,31 @@ function factorial(n) {
     return (n != 1) ? n * factorial(n - 1) : 1;
 }
 
+* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+* number methods: https://www.w3schools.com/js/js_number_methods.asp
+* math https://www.w3schools.com/js/js_math.asp
+* the fizzbuzz problem: https://codeburst.io/javascript-breaking-down-the-shortest-possible-fizzbuzz-answer-94a0ad9d128a
 
 
 ### 03 Colours
 
 ### 04 Dates
 
+https://www.toptal.com/software/definitive-guide-to-datetime-manipulation
+this was very helpful: https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/
+
+dropdown date picker: https://stackoverflow.com/questions/49485821/date-month-year-dropdown-type-date-picker/49485997
+
+
 ### 05 Arrays
+slicing, splicing, poping and pushing
+https://www.w3schools.com/jsref/jsref_slice_array.asp
+
+* array sort method: https://www.w3schools.com/jsref/jsref_sort.asp
+* the array reduce method reduces an array to one number by either adding them up or taking them away: https://www.w3schools.com/jsref/jsref_reduce.asp
+* find the average of an array: https://stackoverflow.com/questions/29544371/finding-the-average-of-an-array-using-js
+* arr.includes: https://appdividend.com/2019/03/14/javascript-array-includes-example-array-prototype-includes-tutorial/
+* Array functions such as filter, map, some, reduce functions: https://medium.com/front-end-weekly/stop-array-foreach-and-start-using-filter-map-some-reduce-functions-298b4dabfa09
 
 confused by 5.10, I'm trying to just pull out the ages from the array but having trouble. I found this 
 https://stackoverflow.com/questions/19590865/from-an-array-of-objects-extract-value-of-a-property-as-array
@@ -69,7 +89,7 @@ but I don't understand .map. I need to research more.
 
     console.log(ageOb);
 
-
+* removing doubles from an array: https://wsvincent.com/javascript-remove-duplicates-array/
 
 
 ### 06 DOM
@@ -127,3 +147,6 @@ Alternatively, you can use the various [other DOM methods](https://www.w3.org/TR
 
 
 Manipulating elements https://learn.jquery.com/using-jquery-core/manipulating-elements/
+
+Creating images with js: https://www.geeksforgeeks.org/how-to-create-an-image-element-dynamically-using-javascript/
+
