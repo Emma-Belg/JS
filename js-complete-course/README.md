@@ -97,9 +97,7 @@ In the example above, getElementById is a **method**, while innerHTML is a **pro
 | element.attribute = new value  | Change the attribute value of an HTML element      |
 | element.style.property = new style  |  Change the style of an HTML element   |
 | **Method**  |  **Description**   |
-| element.setAttribute(attribute, value)  |  Change the attribute value of an HTML element |
-
-
+| element.setAttribute(attribute, value)  |  Change the attribute value of an HTML element |  
 
 
 
@@ -118,13 +116,13 @@ read further https://www.w3schools.com/js/js_htmldom_document.asp
 	
 
 Accesing elements using css selectors: https://dev.to/neutrino2211/using-css-selectors-in-javascript-3hlm 
-Useful information on replacing html elements using js: https://stackoverflow.com/questions/2487290/how-to-overwrite-html-element-from-javascript
+Useful information on replacing html elements using js: https://stackoverflow.com/questions/2487290/how-to-overwrite-html-element-from-javascript  
 
 "**Notes on innerHTML and other DOM manipulation techiques**
 
 There are a number of wrinkles around using innerHTML in certain browsers, mostly around tables and forms. If you can possibly use a library like jQuery, Prototype, etc., I'd do so, as they've got workarounds for those issues built-in.
 
-Alternatively, you can use the various [other DOM methods](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1950641247) rather than innerHTML (the same ones I used for creating the div and adding/removing, above). Note that in most browsers, doing any significant amount of markup by doing a bunch of createElement, appendChild, etc., calls rather than using innerHTML will be dramatically slower. Parsing HTML into their internal structures and displaying it is fundamentally what browsers do, and so they're highly optimized to do that. When you go through the DOM interface, you're going through a layer built on top of their internal structures and not getting the advantage of their optimizations. Sometimes you have to do it that way, but mostly, innerHTML is your friend." .. "I strongly encourage you to 'actually replace the element itself'. Using innerHTML is convenient sometimes, but can also be a vulnerability other times. So if this is your first DOM-adventure, I encourage you to do it the long way at least this once."
+Alternatively, you can use the various [other DOM methods](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1950641247) rather than innerHTML (the same ones I used for creating the div and adding/removing, above). Note that in most browsers, doing any significant amount of markup by doing a bunch of createElement, appendChild, etc., calls rather than using innerHTML will be dramatically slower. Parsing HTML into their internal structures and displaying it is fundamentally what browsers do, and so they're highly optimized to do that. When you go through the DOM interface, you're going through a layer built on top of their internal structures and not getting the advantage of their optimizations. Sometimes you have to do it that way, but mostly, innerHTML is your friend." .. "I strongly encourage you to 'actually replace the element itself'. Using innerHTML is convenient sometimes, but can also be a vulnerability other times. So if this is your first DOM-adventure, I encourage you to do it the long way at least this once."  
 
 
 Manipulating elements https://learn.jquery.com/using-jquery-core/manipulating-elements/
