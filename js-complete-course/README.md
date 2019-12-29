@@ -102,6 +102,7 @@ In the example above, getElementById is a **method**, while innerHTML is a **pro
 
 
 **Adding and Deleting Elements**
+
 | Method | Description  |
 | ----------- | ----------- |
 | document.createElement(element) | Create an HTML element |
@@ -109,6 +110,7 @@ In the example above, getElementById is a **method**, while innerHTML is a **pro
 | document.appendChild(element) | Add an HTML element |
 | document.replaceChild(new, old) | Replace an HTML element |
 | document.write(text)  | Write into the HTML output stream |
+
 
 read further https://www.w3schools.com/js/js_htmldom_document.asp
 	
