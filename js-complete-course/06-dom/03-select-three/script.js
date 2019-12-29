@@ -11,6 +11,9 @@
 
 (function() {
 
-    document.querySelectorAll(".target").innerHTML= "owned";
+    document.querySelectorAll(".target").forEach(toChange => {
+        toChange.innerHTML= "owned";
+        }
+    );
 
 })();
