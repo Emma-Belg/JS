@@ -69,3 +69,7 @@ but I don't understand .map. I need to research more.
     console.log(ageOb);
 
 
+### 06 DOM
+
+Accesing elements using css selectors: https://dev.to/neutrino2211/using-css-selectors-in-javascript-3hlm 
+
