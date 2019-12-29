@@ -79,6 +79,7 @@ The HTML DOM is a standard object model and programming interface for HTML. It d
 * The properties of all HTML elements
 * The methods to access all HTML elements
 * The events for all HTML elements
+
 In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements." https://www.w3schools.com/js/js_htmldom.asp
 "**The DOM Programming Interface**
 The HTML DOM can be accessed with JavaScript (and with other programming languages).In the DOM, all HTML elements are defined as objects.The programming interface is the properties and methods of each object.
@@ -88,6 +89,8 @@ eg: document.getElementById("demo").innerHTML = "Hello World!";
 In the example above, getElementById is a **method**, while innerHTML is a **property**."
 "The HTML DOM document object is the owner of all other objects in your web page. The document object represents your web page. If you want to access any element in an HTML page, you always start with accessing the document object." hence why we write *document*.getElement .... because we need to access it in the *document* first.
 
+**Changing HTML Elements**
+
 | Property      | Description |
 | ----------- | ----------- |
 | element.innerHTML =  new html content    | Change the inner HTML of an element     |
@@ -96,6 +99,19 @@ In the example above, getElementById is a **method**, while innerHTML is a **pro
 | **Method**  |  **Description**   |
 | element.setAttribute(attribute, value)  |  Change the attribute value of an HTML element |
 
+
+
+**Adding and Deleting Elements**
+| Method | Description  |
+|----- | -------|
+| document.createElement(element) | Create an HTML element |
+| document.removeChild(element) | Remove an HTML element |
+| document.appendChild(element) | Add an HTML element |
+| document.replaceChild(new, old) | Replace an HTML element |
+| document.write(text)  | Write into the HTML output stream |
+
+read further https://www.w3schools.com/js/js_htmldom_document.asp
+	
 
 Accesing elements using css selectors: https://dev.to/neutrino2211/using-css-selectors-in-javascript-3hlm 
 Useful information on replacing html elements using js: https://stackoverflow.com/questions/2487290/how-to-overwrite-html-element-from-javascript
