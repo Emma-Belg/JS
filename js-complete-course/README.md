@@ -41,6 +41,7 @@ Good work!
 ## Notes to self
 
 * document.getElementById("......").addEventListener("click", function() 
+* https://stackoverflow.com/questions/29269948/trigger-event-when-selecting-in-a-dropdown-javascript-eventlistener
 
 ### 01 Base
 
