@@ -42,7 +42,7 @@
  //Parent Element is in a section tag with a class="material"
 
     let newimg = document.createElement("IMG");
-    newimg.src = "http://www.randomkittengenerator.com/cats/rotator.php";
+    newimg.src = document.getElementById("source").getAttribute("data-image");
     newimg.appendChild(document.getElementById("source"));
     document.getElementById("target").appendChild(newimg);
 
