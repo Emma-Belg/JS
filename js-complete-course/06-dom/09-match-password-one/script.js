@@ -11,6 +11,19 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function change() {
+
+        let x = document.getElementById("pass-one").value;
+        console.log(x);
+
+        let y = document.getElementById("pass-two").value;
+        console.log(y);
+
+        if (x !== y) {
+            document.getElementById("pass-one").style.borderColor = "red";
+            document.getElementById("pass-two").style.borderColor = "red";
+        }
+    });
+
 
 })();
