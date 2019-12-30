@@ -43,8 +43,8 @@
 
     let newimg = document.createElement("IMG");
     newimg.src = document.getElementById("source").getAttribute("data-image");
-    newimg.appendChild(document.getElementById("source"));
     document.getElementById("target").appendChild(newimg);
+    document.getElementById("source").remove();
 
 
 })();
