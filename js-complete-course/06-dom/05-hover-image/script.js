@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    let newimg = document.getElementsByTagName("img")[0];
+
+    document.getElementsByTagName("img")[0].onmouseover = function  () {
+        newimg.setAttribute("src", "../../_shared/img/kiss-wink-heart.svg")
+    };
+
+    document.getElementsByTagName("img")[0].onmouseout = function  () {
+        newimg.setAttribute("src", "../../_shared/img/kiss.svg")
+    };
+
 
 })();
