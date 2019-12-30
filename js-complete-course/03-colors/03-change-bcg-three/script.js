@@ -25,5 +25,5 @@
         document.body.style.backgroundColor = colourRandom()
 
     });
-    
+
 })();
