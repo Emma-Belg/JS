@@ -12,18 +12,15 @@
 (function() {
 
     let newtable = document.createElement("TABLE");
-    let tablecol = document.createElement("TD");
-    document.getElementById("target").appendChild(newtable);
-    document.getElementById("target").appendChild(tablecol);
+    newtable.setAttribute("id", "tableid");
 
-    rows = [];
+    document.getElementById("target").appendChild(newtable);
+
+    let rows = [];
     for (i = 0; i < 10; i++) {
-        document.createElement("TR");
-    }
-    
-    let row = 0;
-    for (let t = 0; t < 9; t++) {
-     row = rows[t];
+        rows[i] = document.createElement("TR");
+        document.getElementById("tableid").appendChild(rows[i]);
+            rows[i].innerHTML = "testing " + i;
     }
 
 
@@ -32,6 +29,13 @@ let c = document.getElementsByClassName("material");
 let newimg = document.createElement("IMG");
 newimg.src = "http://www.randomkittengenerator.com/cats/rotator.php";
 document.getElementById("target").appendChild(newimg);
+
+
+    let row = 0;
+    for (let t = 0; t < 9; t++) {
+        row = rows[t];
+    }
+
 
  */
 
