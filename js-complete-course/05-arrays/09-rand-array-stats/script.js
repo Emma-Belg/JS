@@ -13,7 +13,6 @@
 
     document.getElementById('run').addEventListener('click', function (){
 
-
     let numbers = [];
     for (i = 0; i < 10; i++) {
         numbers [i] = Math.floor((Math.random() * 100) + 1);
@@ -24,7 +23,7 @@
         document.getElementById("max").innerHTML= Math.max.apply( null, numbers);
 
         let total = 0;
-        for(var i = 0; i < numbers.length; i++) {
+        for (var i = 0; i < numbers.length; i++) {
             total += numbers[i];
         }
         var avg = total / numbers.length;

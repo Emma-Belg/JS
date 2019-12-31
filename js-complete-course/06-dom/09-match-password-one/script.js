@@ -22,7 +22,11 @@
         if (x !== y) {
             document.getElementById("pass-one").style.borderColor = "red";
             document.getElementById("pass-two").style.borderColor = "red";
-        }
+        } else {
+                document.getElementById("pass-one").style.borderColor = "silver";
+                document.getElementById("pass-two").style.borderColor = "silver";
+            }
+
     });
 
 
