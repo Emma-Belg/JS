@@ -11,6 +11,10 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("pass-one").addEventListener('keyup', function() {
+        let x = document.getElementById("pass-one").value.length;
+        document.getElementById("counter").innerHTML = ((x) + "/10");
+        document.getElementById("pass-one").maxLength = 10;
+    });
 
 })();
