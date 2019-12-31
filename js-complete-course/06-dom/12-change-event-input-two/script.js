@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("pass-one").addEventListener('keyup', function() {
+
+        let x = document.getElementById("pass-one").value;
+        let y  = new RegExp(".*[0-9].*[0-9]");
+        if (x.length >= 8 &&  y.test(x)) {
+            document.getElementById("validity").innerHTML = "ok";
+            document.getElementById("pass-one").style.borderColor = "green";
+        }
+        else {
+            document.getElementById("validity").innerHTML = "not ok";
+            document.getElementById("pass-one").style.borderColor = "red";
+        }
+    });
 
 })();
