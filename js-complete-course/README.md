@@ -94,6 +94,7 @@ but I don't understand .map. I need to research more.
 
 ### 06 DOM
 
+this is a helpful resource: https://javascript.info/modifying-document
 About DOM: "When a web page is loaded, the browser creates a Document Object Model of the page. The HTML DOM model is constructed as a tree of Objects.
 The HTML DOM is a standard object model and programming interface for HTML. It defines:
 * The HTML elements as objects
