@@ -23,12 +23,12 @@
     let q4;
     q4 = prompt ("Is this correct? yes/no  " + q1 + " " + q2 + " " + q3);
 
-    if (q4 == "yes") {
+    if (q4 === "yes") {
         alert ("thank you!");
     }
-    else (q4 == "no")
-    {
-        rerun();
+    else {
+       rerun();
+        // this is also possible with location.reload(); but this reloads the page
     }
 
 

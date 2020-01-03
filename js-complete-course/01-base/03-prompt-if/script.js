@@ -11,8 +11,7 @@
 
 
 (function () {
-    let user
-    user = prompt("would you like some cake?");
+    let user = prompt("would you like some cake?");
 
     if (user == "yes") {
         alert("congratulations!");
