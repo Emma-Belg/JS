@@ -11,6 +11,23 @@
 
 (function() {
 
-    // your code here
+    var i = 0;
+    var txt = document.getElementById("target").innerText;
+    console.log(txt);
+    target.innerHTML = "";
+    console.log(document.getElementById("target").innerText + 'hi');
+
+
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("target").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, Math.floor((Math.random() * 200) + 20));
+        }
+    }
+    typeWriter();
+
+
+
 
 })();
