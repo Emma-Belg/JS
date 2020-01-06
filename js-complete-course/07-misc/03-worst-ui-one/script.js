@@ -11,13 +11,13 @@
 
 (function() {
 
-    var slider = document.getElementById('slider');
+    let slider = document.getElementById('slider');
 
-    var output = document.getElementById("target");
-    output.innerHTML = slider.value;
+    let output = document.getElementById("target");
+    output.innerHTML = "0"+ slider.value;
 
     slider.oninput = function() {
-        output.innerHTML = this.value;
+        output.innerHTML = "0"+ this.value;
     }
 
 })();
