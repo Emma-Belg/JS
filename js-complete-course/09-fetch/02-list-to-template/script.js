@@ -13,18 +13,19 @@
 
     let dataElement;
 
-        fetch('http://localhost:12345/_shared/api.json')
-            .then((response) => {
-                return response.json();
-            })
-            .then((myJson) => {
-               dataElement = myJson.heroes;
-               test(dataElement);
-            });
-function test (anything){
-    console.log(anything);
-    console.log(anything[0].name);
-}
+    fetch('http://localhost:12345/_shared/api.json')
+        .then((response) => {
+            return response.json();
+        })
+        .then((myJson) => {
+            dataElement = myJson.heroes;
+            test(dataElement);
+        });
+
+    function test(anything) {
+        console.log(anything);
+        console.log(anything[0].name);
+    }
 
     let template = document.getElementById("tpl-hero");
 
@@ -32,7 +33,7 @@ function test (anything){
 
     document.getElementById("run").addEventListener("click", function () {
 
-       //console.log(clone);
+        //console.log(clone);
 
         dataElement.forEach(function (element, index) {
 
