@@ -34,15 +34,14 @@
         //console.log(dataElement[0].alterEgo);
 
         let input = document.getElementById("hero-id").value -= 1;
-        let put = input;
 
         //console.log(clone);
 
         function printing(dqdq) {
 
-            let name = dqdq.heroes[put].name;
-            let ego = dqdq.heroes[put].alterEgo;
-            let abilities = dqdq.heroes[put].abilities;
+            let name = dqdq.heroes[input].name;
+            let ego = dqdq.heroes[input].alterEgo;
+            let abilities = dqdq.heroes[input].abilities;
 
             console.log(name,ego,abilities);
 
