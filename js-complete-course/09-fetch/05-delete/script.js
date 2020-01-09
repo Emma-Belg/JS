@@ -10,5 +10,20 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", function () {
+
+        let input = parseInt(document.getElementById("hero-id").value) - 1;
+
+        fetch('http://localhost:12345/_shared/api.json')
+            .then((response) => {
+                return response.json();
+            })
+            .then((myJson) => {
+                console.log(myJson);
+
+                let newArray = myJson.heroes.splice(input, 1);
+                console.log(newArray);
+            });
+
+    });
 })();
