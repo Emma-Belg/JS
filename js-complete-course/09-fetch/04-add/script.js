@@ -34,15 +34,15 @@
         console.log(nameIn);
 
         class Hero {
-            constructor(name, ego, [power]) {
-                this.nameIn = name;
-                this.egoIn = ego;
-                this.powerIn = [power];
+            constructor(name, ego, power) {
+                this.name = name;
+                this.ego = ego;
+                this.power = power;
             }
         }
 
             //making new Hero object with the input values
-            let stuff = new Hero(nameIn, egoIn, [powerIn]);
+            let stuff = new Hero(nameIn, egoIn, powerIn);
 
             console.log(stuff);
 
