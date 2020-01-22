@@ -34,11 +34,16 @@
 
     let c = [];
     for (i = 0  ; i < 10; i++) {
+        //this will create 10 TD elements
         c[i] = document.createElement("TD");
+        //this will put the 10 TD elements into the above created table
         document.getElementById("id10").appendChild(c[i]);
+        //giving each TD element an id of 'col'+i
         c[i].setAttribute("id", "col" + i);
+        //creating an empty array for each row
         let r = [];
         for (x = 0; x < 10; x++) {
+            //creating 10 row elements within this nested for loop
             r[x] = document.createElement("TR");
             document.getElementById("col" + i).appendChild(r[x]);
             r[x].innerHTML =  (x+1) * (i+1);
