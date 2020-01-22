@@ -42,10 +42,28 @@ Good work!
 
 * document.getElementById("......").addEventListener("click", function() 
 * https://stackoverflow.com/questions/29269948/trigger-event-when-selecting-in-a-dropdown-javascript-eventlistener
-* the ? used as a mini if else statement https://javascript.info/ifelse
-* 'this' js keyword https://www.w3schools.com/js/js_this.asp
+* the ? used as a mini if else statement: https://javascript.info/ifelse
+* 'this' js keyword: https://www.w3schools.com/js/js_this.asp
+* js dot notation vs bracket notation: https://codeburst.io/javascript-quickie-dot-notation-vs-bracket-notation-333641c0f781
+* **Reg Ex (Regular expressions) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions**
+* **https://www.rexegg.com/regex-uses.html
+* https://www.rexegg.com/regex-quickstart.html**
+* append child: https://plainjs.com/javascript/manipulation/wrap-an-html-structure-around-an-element-28/
+
+* debugging: https://softwareengineering.stackexchange.com/questions/10735/how-to-most-effectively-debug-code
+
+* logic gates: https://www.electronics-tutorials.ws/logic/universal-gates.html
+* OOP pros and cons: https://medium.com/@darrickmckirnan/object-oriented-programming-oop-functional-programming-what-are-they-the-pros-and-cons-11f98a971e38
 
 ### 01 Base
+* switch https://javascript.info/switch
+* dropdown listener: https://stackoverflow.com/questions/29269948/trigger-event-when-selecting-in-a-dropdown-javascript-eventlistener
+* stop a function running using a boolean: https://stackoverflow.com/questions/43623745/how-to-stop-function-of-javascript-by-pressing-button/43623858
+
+Strings
+* split strings https://www.geeksforgeeks.org/javascript-string-prototype-split-function/
+* trim strings https://stackoverflow.com/questions/7463658/how-to-trim-a-string-to-n-chars-in-javascript
+* to string function https://www.geeksforgeeks.org/javascript-tostring-function/
 
 ### 02 Math 
 
@@ -62,19 +80,27 @@ function factorial(n) {
 
 
 ### 03 Colours
+random colours: https://stackoverflow.com/questions/1484506/random-color-generator
 
 ### 04 Dates
 
 https://www.toptal.com/software/definitive-guide-to-datetime-manipulation
+https://www.w3schools.com/js/js_date_methods.asp
+https://www.digitalocean.com/community/tutorials/understanding-date-and-time-in-javascript
+
 this was very helpful: https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/
 
 dropdown date picker: https://stackoverflow.com/questions/49485821/date-month-year-dropdown-type-date-picker/49485997
+
+black friday: https://codereview.stackexchange.com/questions/33527/find-next-occurring-friday-or-any-dayofweek
 
 
 ### 05 Arrays
 slicing, splicing, poping and pushing
 https://www.w3schools.com/jsref/jsref_slice_array.asp
 
+* push https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+* replacing an item in an array: https://www.geeksforgeeks.org/how-to-replace-an-item-from-an-array-in-javascript/
 * array sort method: https://www.w3schools.com/jsref/jsref_sort.asp
 * the array reduce method reduces an array to one number by either adding them up or taking them away: https://www.w3schools.com/jsref/jsref_reduce.asp
 * find the average of an array: https://stackoverflow.com/questions/29544371/finding-the-average-of-an-array-using-js
@@ -90,6 +116,8 @@ but I don't understand .map. I need to research more.
     console.log(ageOb);
 
 * removing doubles from an array: https://wsvincent.com/javascript-remove-duplicates-array/
+* removing element from an array: https://stackoverflow.com/questions/5767325/how-do-i-remove-a-particular-element-from-an-array-in-javascript
+* for each + array: https://stackoverflow.com/questions/9329446/for-each-over-an-array-in-javascript
 
 
 ### 06 DOM
@@ -151,3 +179,13 @@ Manipulating elements https://learn.jquery.com/using-jquery-core/manipulating-el
 
 Creating images with js: https://www.geeksforgeeks.org/how-to-create-an-image-element-dynamically-using-javascript/
 
+### 07 Misc
+* range slider https://stackoverflow.com/questions/44182411/range-slider-with-direct-number-input
+* clear method http://www.collectionsjs.com/method/clear
+* continuous counter: http://jsfiddle.net/pottersky/jj30s2Le/1/
+* as above: https://stackoverflow.com/questions/33944114/creating-a-continuous-counter-with-javascript
+* slot machine: https://torutsume.net/en/slot-machine-by-javascript/
+
+### 09 APIS
+* using fetch: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+* JSON: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON
