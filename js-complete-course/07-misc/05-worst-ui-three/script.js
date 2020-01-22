@@ -105,42 +105,5 @@
     let begining = setInterval(roller, 100);
 
 
-    /*   document.getElementById("part-one").innerHTML = "+" + first;
-       document.getElementById("part-two").innerHTML = to99;
-
-
-
-       document.getElementById('part-one').addEventListener("click" , function() {
-           min1++;
-           document.getElementById("target").innerHTML = "+" + first + start2 + start3 + start4;
-
-       });
-
-
-
-
-       document.getElementById('part-three').addEventListener("click" , function() {
-           min3++;
-           if (min3 < 10) {
-               start3 = "0" + min3;
-           }
-           else {
-               start3 = min3;
-           }
-           document.getElementById("target").innerHTML = "+" + min1 + start2 + to99 + start4;
-       });
-
-
-       document.getElementById('part-four').addEventListener("click" , function() {
-           min4++;
-           if (min4 < 10) {
-               start4 = "0" + min4;
-           }
-           else {
-               start4 = min4;
-           }
-           document.getElementById("target").innerHTML = "+" + min1 + start2 + start3 + to99;
-       });*/
-
 
 })();

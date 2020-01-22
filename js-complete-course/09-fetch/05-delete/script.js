@@ -22,7 +22,7 @@
                 console.log(myJson);
 
                 let newArray = myJson.heroes.splice(input, 1);
-                console.log(newArray);
+                console.log(newArray    );
             });
 
     });

@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("increment").addEventListener("click", function () {
+
+        let increment = document.getElementById("target");
+        increment.innerHTML++;
+
+        localStorage.setItem("clickValue", increment.innerText);
+        console.log(localStorage.getItem("clickValue"));
+        increment.innerHTML = localStorage.getItem("clickValue");
+
+    });
 
 })();

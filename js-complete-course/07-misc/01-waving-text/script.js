@@ -48,15 +48,27 @@
       //  for (let l=0; l < letters.length; l+5){}
         //creating element to wrap each letter
         wrap[i] = document.createElement("span");
-        //con the below so that I can use if for the style size
-        let size = "font-size:"+[i]*2+"px";
+        //concatinate the below so that I can use if for the style size
+        let size = "font-size:"+[i]+2+"px";
         wrap[i].setAttribute("style", size);
         let newSpan = document.createTextNode(letters[i]);
         wrap[i].appendChild(newSpan);
         text.appendChild(wrap[i]);
+
+        //trying to make it go smaller again... it's not working
+        let big = "font-size:"+700+"px";
+        if (size > big) {
+            for (let x=50; x < letters.length; x++) {
+                let sizeSm = "font-size:" + [x] - 8 + "px";
+                wrap[x].setAttribute("style", sizeSm);
+                let newSpan = document.createTextNode(letters[x]);
+                wrap[x].appendChild(newSpan);
+                text.appendChild(wrap[x]);
+            }
+        }
     }
 
-    
+
 
     // insert wrapper before el in the DOM tree
     //letters.prepend(wrap, letters);
