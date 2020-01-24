@@ -16,16 +16,12 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
-
     document.getElementById("addition").addEventListener("click", function() {
 
         let num1 = document.getElementById("op-one").value;
         let num2 = document.getElementById("op-two").value;
-        //ParseInt turns a string into a value
-        let num3 = parseInt(num1);
-        let num4 = parseInt(num2);
-
-        let addition = (num3 + num4);
+        //ParseInt turns a string into a value. you can also do this by putting a + in front of the document.getElementById
+        let addition = (parseInt(num1) + parseInt(num2));
         alert(addition);
 
     });
@@ -33,30 +29,21 @@
     document.getElementById("substraction").addEventListener("click", function() {
         let num1 = document.getElementById("op-one").value;
         let num2 = document.getElementById("op-two").value;
-        let num3 = parseInt(num1);
-        let num4 = parseInt(num2);
-
-        let substraction = (num3 - num4);
+        let substraction = (parseInt(num1) - parseInt(num2));
         alert(substraction);
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         let num1 = document.getElementById("op-one").value;
         let num2 = document.getElementById("op-two").value;
-        let num3 = parseInt(num1);
-        let num4 = parseInt(num2);
-
-        let multiplication = (num3 * num4);
+        let multiplication = (parseInt(num1) * parseInt(num2));
         alert(multiplication);
     });
 
     document.getElementById("division").addEventListener("click", function() {
         let num1 = document.getElementById("op-one").value;
         let num2 = document.getElementById("op-two").value;
-        let num3 = parseInt(num1);
-        let num4 = parseInt(num2);
-
-        let division = (num3 / num4);
+        let division = (parseInt(num1) / parseInt(num2));
         alert(division);
     });
 })();

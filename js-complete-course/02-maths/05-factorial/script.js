@@ -28,7 +28,7 @@ the ? is a form of mini if else - more research needed.
         function factorial(n) {
             if (n < 0)
                 return -1;
-            else if (n == 0)
+            else if (n === 0)
                 return 1;
             else {
                 return (n * factorial(n - 1));

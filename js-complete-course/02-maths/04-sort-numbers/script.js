@@ -9,18 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-
-
-
-
 (function () {
+    let points = document.getElementById("numbers").value;
+    let arr = points.split(", ");
 
     document.getElementById("run").addEventListener("click", function() {
-        var points = [2, 4, 14, 10, 90, 23, 16];
-        points.sort(function(a, b) {
+        arr.sort(function(a, b) {
             return a-b
         });
-        alert(points);
+        alert(arr);
     });
 
 })();

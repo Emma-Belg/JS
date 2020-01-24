@@ -16,8 +16,6 @@
         for (i=1; i<=21; i++) {
             document.write(Math.pow(i, 2) + "<br />");
           }
-
-
     });
 
 })();
