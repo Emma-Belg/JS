@@ -10,12 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
+   document.getElementById("target").innerHTML = localStorage.getItem('clickValue');
 
     document.getElementById("increment").addEventListener("click", function () {
 
         let increment = document.getElementById("target");
         increment.innerHTML++;
 
+        //let savedValue = localStorage.getItem('clickValue');
         localStorage.setItem("clickValue", increment.innerText);
         console.log(localStorage.getItem("clickValue"));
         increment.innerHTML = localStorage.getItem("clickValue");

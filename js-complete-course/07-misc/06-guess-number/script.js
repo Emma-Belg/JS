@@ -17,21 +17,22 @@
 
 
         let guess = document.getElementById("input").value;
+        parseInt(guess);
 
         let guessCounter = document.getElementById("guessLeft");
         let count = 0;
-        count += 1;
-        guessCounter.innerHTML = "Guesses left: " + count -5;
+        //count++;
+        document.getElementById("count").innerHTML = 5 - count;
         console.log(count);
 
 
         for (i = 0; i > 5; i++) {
             if (guess > x) {
                 document.getElementById("response").innerHTML = "Guess lower";
-                count += 1;
+                count++;
             } else if (guess < x) {
                 document.getElementById("response").innerHTML = "Guess higher";
-                count += 1;
+                count++;
             } else {
                 document.getElementById("response").innerHTML = "That's right!";
             }

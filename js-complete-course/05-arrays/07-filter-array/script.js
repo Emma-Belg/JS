@@ -90,7 +90,6 @@
             },
         ];
 
-
         var adult = people.filter(function (personObj) {
             return personObj.age > 18;
         });
